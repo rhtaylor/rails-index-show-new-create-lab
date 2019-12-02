@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1> </h1>
+<h1>Coupon Form</h1>
+
+<%= form_tag url_for(action: 'create'), method: "post" do %>
+<h1>Store</h1>
+<%= label_tag 'coupon',  text_field_tag('coupon[store]') %>
+<h1>code</h1>
+<%= label_tag 'coupon',  text_field_tag('coupon[coupon_code]') %>
+<%= submit_tag 'Submit Coupon' %>
+<%= %>  
+<% end %>
+</body>
+</html>
