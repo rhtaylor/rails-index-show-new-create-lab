@@ -2,7 +2,8 @@
 <% @coupons.each do |coupon| %> 
 <% @coupon = coupon %> 
 <h1><%= @coupon.coupon_code %></h1>
+
 <h1><%= @coupon.store %></h1> 
-<h1><%= link_to "Coupon", controller: "coupons", action: "show", id: @coupon %></h1>
+<h1><%= link_to @coupon.coupon_code, controller: "coupons", action: "show", id: @coupon %></h1>
 
 <%end%>
